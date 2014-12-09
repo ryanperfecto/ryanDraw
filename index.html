@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[title]</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/plugin.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<canvas id="main" width="500" height="500"></canvas>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	<!-- The plugin JavaScript file -->
+	<script src="assets/js/plugin.js"></script>
+	<script type="text/javascript">
+		var draw = new Draw();
+		draw.setDebug(true);
+		draw.construct('main', 500, 500, '2d');
+		//draw.rect(0, 0, 500, 500, 'rgb(50,50,50)', 'rgb(50,50,50)');
+		//draw.sqr(0, 0, 20, '#FFF', '#FFF');
+		//draw.ln(100, 100, 20, 20, 10, '#FFF');
+		//draw.pt(400, 100, 10, '#000', 'square');
+		draw.circle(400, 100, 10, 10, '#000', '#000');
+		draw.getErrors();
+	</script>
+  </body>
+</html>
