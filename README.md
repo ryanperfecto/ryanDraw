@@ -21,6 +21,36 @@ So far the following functions have been implemented:
     </tr>
   </thead>
   <tbody>
+	<tr>
+      	<td>debug</td>
+      	<td>Log debug information to the console</td>
+    	<td>
+		    <table id="debug">
+				<thead>
+				    <tr>
+				      <th>Param</th>
+				      <th>Type</th>
+				      <th>Example</th>
+				    </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>state</th>
+						<th>Boolean</th>
+						<th>true || false</th>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<strong>Example: </strong> <br />
+							<code>							
+							draw.setDebug(true); <br />
+							</code>
+						</td>					
+					</tr>
+				</tbody>
+			</table>
+		</td>
+	</tr>
     <tr>
       <td>rect</td>
       <td>Draws a recentagle onto the screen.</td>
@@ -68,10 +98,7 @@ So far the following functions have been implemented:
 				<td colspan="3">
 					<strong>Example: </strong> <br />
 					<code>
-					var draw = new Draw(); <br />
-					draw.setDebug(true); <br />
-					draw.construct('main', 500, 500, '2d'); <br />
-					draw.rect(0, 0, 500, 500, 'rgb(50,50,50)', 'rgb(50,50,50)'); <br />
+					rect(0, 0, 500, 500, 'rgb(50,50,50)', 'rgb(50,50,50)'); <br />
 					</code>
 				</td>
 			</tr>
