@@ -66,12 +66,12 @@ So far the following functions have been implemented:
             </tr>
 			<tr>	
 				<td colspan="3">
-					<strong>Example: </strong> 
+					<strong>Example: </strong> <br />
 					<code>
-					var draw = new Draw();
-					draw.setDebug(true);
-					draw.construct('main', 500, 500, '2d');
-					draw.rect(0, 0, 500, 500, 'rgb(50,50,50)', 'rgb(50,50,50)');
+					var draw = new Draw(); <br />
+					draw.setDebug(true); <br />
+					draw.construct('main', 500, 500, '2d'); <br />
+					draw.rect(0, 0, 500, 500, 'rgb(50,50,50)', 'rgb(50,50,50)'); <br />
 					</code>
 				</td>
 			</tr>
